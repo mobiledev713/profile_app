@@ -1,7 +1,7 @@
 const Constants = {
   Colors: {
     Azure: '#0080FF',
-    Ferrari: '#DFF280',
+    Ferrari: '#FF2800',
   },
 };
 
