@@ -9,6 +9,7 @@ import {
 import { Ionicons, FontAwesome5 } from '@expo/vector-icons';
 
 import { Home, Info } from '../screens';
+import styles from './styles';
 import Constants from '../const';
 
 const Tab = createBottomTabNavigator();
@@ -16,23 +17,7 @@ const Tab = createBottomTabNavigator();
 function TabBar(props: BottomTabBarProps<BottomTabBarOptions>): JSX.Element {
   const { state, descriptors, navigation } = props;
   return (
-    <View
-      style={{
-        position: 'absolute',
-        left: 20,
-        right: 20,
-        bottom: 30,
-        borderRadius: 20,
-        shadowColor: 'black',
-        shadowOffset: {
-          width: 10,
-          height: 10,
-        },
-        shadowOpacity: 0.2,
-        shadowRadius: 10,
-        elevation: 15,
-      }}
-    >
+    <View style={styles.tabBarStyle}>
       <BottomTabBar
         state={state}
         descriptors={descriptors}
