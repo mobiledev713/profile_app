@@ -1,4 +1,11 @@
+import { Dimensions } from 'react-native';
+
+const { width, height } = Dimensions.get('screen');
 const Constants = {
+  Layout: {
+    Width: width,
+    Height: height,
+  },
   Colors: {
     Azure: '#0080FF',
     Ferrari: '#FF2800',
