@@ -8,9 +8,6 @@ export default function Home(): JSX.Element {
     <View style={styles.container}>
       <ScrollView>
         <SafeAreaView />
-        <View style={styles.content}>
-          <Image style={styles.image} source={{}} />
-        </View>
       </ScrollView>
     </View>
   );
